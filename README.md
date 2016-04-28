@@ -18,7 +18,7 @@ Introduction to ES6 Quiz
 (x) True
 ( ) False
 
-?: What is the value of `obj` in the following example?
+?: What is the final value of `obj` in the following example?
 
 ```javascript
 const obj = { foo: 1 }
