@@ -1,7 +1,9 @@
-Introduction to ES6 Quiz
+# Introduction to ES6 Quiz
 ---
 
 ???
+
+# ES6 Quiz
 
 ?: `var` declares a block-scoped variable
 
