@@ -88,7 +88,7 @@ class Animal {
   }
 
   speak() {
-    console.log(this.noises)
+    console.log(this.noise)
   }
 }
 
@@ -125,7 +125,9 @@ const speed = 'quick'
 
 ```javascript
 const obj = {
+
   [100 + 20 + 3]: 'party!'
+  
 }
 ```
 
