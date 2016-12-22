@@ -1,5 +1,9 @@
 # Introduction to ES6 Quiz
----
+
+## Objectives
+
+1. Test your understanding of ES6 syntax
+2. Review Javascript principles
 
 ???
 
@@ -125,9 +129,7 @@ const speed = 'quick'
 
 ```javascript
 const obj = {
-
   [100 + 20 + 3]: 'party!'
-  
 }
 ```
 
