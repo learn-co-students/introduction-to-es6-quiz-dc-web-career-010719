@@ -125,7 +125,7 @@ const speed = 'quick'
 ( ) 'The speed brown fox jumps over the lazy dog.'
 (x) 'The quick brown fox jumps over the lazy dog.'
 
-?: What is the value of `obj[123]` below?
+?: Select the value of `obj[123]`
 
 ```javascript
 const obj = {
