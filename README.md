@@ -150,3 +150,58 @@ array = [...extension, ...array]
 ( ) `[4, 5, 6, 1, 2, 3]`
 
 ???
+
+ 
+Q.(1) (function(x, f = () => x) {
+  var x;
+  var y = x;
+  x = 2;
+  return [x, y, f()];
+})(1)
+view rawgistfile1.js hosted with ❤ by GitHub
+(A) [2, 1, 1]
+(B)  [2, undefined, 1]
+(C) [2, 1, 2]
+(D) [2, undefined, 2]
+
+Q.(2) (function() {
+  return [
+    (() => this.x).bind({ x: 'inner' })(),
+    (() => this.x)()
+  ]
+}).call({ x: 'outer' });
+view rawgistfile1.js hosted with ❤ by GitHub
+(A) ['inner', 'outer']
+(B) ['outer', 'outer']
+(C) [undefined, undefined]
+(D)  Error
+
+Q.(3) 
+let x, { x: y = 1 } = { x }; y;
+view rawtest.js hosted with ❤ by GitHub
+(A) undefined
+(B) 1
+(C) { x: 1 }
+(D) Error
+
+Q.(4) (function() {
+  let f = this ? class g { } : class h { };
+  return [
+    typeof f,
+    typeof h
+  ];
+})();
+view rawtest.js hosted with ❤ by GitHub
+ (A)["function", "undefined"]
+ (B)["function", "function"]
+ (C)["undefined", "undefined"]
+ (D)Error
+ 
+Q.5 (typeof (new (class { class () {} })))
+view rawtest.js hosted with ❤ by GitHub
+ (A)"function"
+ (B)"object"
+ (C)"undefined"
+ (D)Error
+
+
